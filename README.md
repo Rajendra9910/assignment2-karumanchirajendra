@@ -21,8 +21,7 @@
      * Vada Pav
      * Haleem
      * Shavarma
-
-*** 
+  *** 
 ### Regarding Myself_Rajendra Karumanchi     
 
 [Small intro & Pic](AboutMe.md)
@@ -30,7 +29,7 @@
 ***
 ### Referred Sports
 
-In This Table I'm going to Share about 4 sports/activities that I would recommend someone to try, the four sports are Cricket, Kabaddi, Basket Ball and Vally Ball whci are located in India with amount that can be charged to use equipments to play
+In This Table I'm going to Share about 4 sports/activities that I would recommend someone to try, the four sports are Cricket, Kabaddi, Basket Ball and Vally Ball which are located in India with price that can be charged to use equipments to play.
 
 | Sport                               | Location | Price  |
 |-------------------------------------|----------|--------|
@@ -46,6 +45,23 @@ In This Table I'm going to Share about 4 sports/activities that I would recommen
 ***MARK TWAIN***.
 
 >"Fastasy is hardly an escape from reality. It's a way of understanding it."
-***LLOYD LEXANDER***.
+***LLOYD LEXANDER***.   
 
+***
+### code Fencing - Lexicographical Next Balanced Sequence
 
+> The first, straightforward formula is very easy to code, but this method is likely to overflow even for relatively small values of  and  (even if the answer completely fit into some datatype, the calculation of the intermediate factorials can lead to overflow). Therefore, this method often can only be used with long arithmetic:
+
+ForMoreInformation <https://cp-algorithms.com/combinatorics/binomial-coefficients.html>
+
+```
+int C(int n, int k) {
+    int res = 1;
+    for (int i = n - k + 1; i <= n; ++i)
+        res *= i;
+    for (int i = 2; i <= k; ++i)
+        res /= i;
+    return res;
+}
+```
+ForMoreInformation <https://cp-algorithms.com/combinatorics/bracket_sequences.html>
